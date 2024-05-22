@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <head>
+        <title>My App</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <h1>Weather App</h1>
+
+        <input id='city_input' type="text" placeholder="Insert City">
+        <button onclick="searchCity()">Search</button>
+        <hr>
+        <div id = 'city_info'>
+            <strong>City:</strong><span id = 'city'></span><br>
+            <strong>Cloud Percentage:</strong><span id="cloud_pct"></span><br>
+            <strong>Temperature:</strong><span id="temp"></span><br>
+            <strong>Feels Like:</strong><span id="feels_like"></span><br>
+            <strong>Humidity:</strong><span id="humidity"></span><br>
+            <strong>Minimum Temperature:</strong><span id="min_temp"></span><br>
+            <strong>Maximum Temperature:</strong><span id="max_temp"></span><br>
+            <strong>Wind Speed:</strong><span id="wind_speed"></span><br>
+            <strong>Wind Degrees:</strong><span id="wind_degrees"></span><br>
+            <strong>Sunrise:</strong><span id="sunrise"></span><br>
+            <strong>Sunset:</strong><span id="sunset"></span><br>
+        </div>
+
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+    </body>
+<html>

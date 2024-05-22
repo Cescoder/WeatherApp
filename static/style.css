@@ -1,0 +1,19 @@
+body {
+    font-family: monospace;
+}
+
+#city_info {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
+
+#city_info strong {
+    font-weight: bold;
+}
+
+#city_info span {
+    margin-left: 10px;
+}
